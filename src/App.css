@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Island+Moments&display=swap");
+
+:root {
+  /*Variables de Couleurs*/
+  --color-primary: #0a0908;
+  --color-secondary: #49111c;
+  --color-tertiary: #a9927d;
+  --color-accent: #5e503f;
+  --color-text-muted: #f2f4f3;
+
+  /*Variables de Padding*/
+  --container-padding: 2rem;
+  --section-padding: 1rem;
+
+  /*Variables de Gap*/
+  --small-gap: 0.75rem;
+  --medium-gap: 1rem;
+  --large-gap: 2rem;
+
+  /*Variable de Font*/
+  --font-family: "Island Moments", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+}

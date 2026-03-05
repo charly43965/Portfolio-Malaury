@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: calc(var(--large-gap) * 2);
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    text-transform: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
