@@ -1,0 +1,55 @@
+#animate {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-size: 5rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.slideout {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  background-color: #49111c5b;
+  color: white;
+  width: 0%;
+  height: 100%;
+  top: 50%;
+  padding: var(--section-padding);
+  animation: slideout 5s;
+}
+
+#animate_right {
+  justify-content: flex-end;
+}
+
+#animate_left {
+  justify-content: flex-start;
+}
+
+@keyframes slideout {
+  0% {
+    visibility: visible;
+    width: 100%;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}
